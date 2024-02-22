@@ -12,13 +12,13 @@ export default {
     name: 'BarChart',
     components: { Bar },
     data() {
-        const yearlyIncomeData = [30, 20, 12, 13, 25, 30, 28, 35, 22, 20, 25, 30];
+        const MonthlyIncome = [30, 20, 12, 13, 25, 30, 28, 35, 22, 20, 25, 30];
         const chartData = {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
             datasets: [
                 {
                     label: 'MonthlyIncome',
-                    data: yearlyIncomeData,
+                    data: MonthlyIncome,
                     backgroundColor: '#ff6384',
                     borderColor: '#ff6384',
                     borderWidth: 1
