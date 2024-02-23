@@ -74,6 +74,10 @@
                             <router-link :to="{name: 'createproducts'}"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Create Products</router-link>
                         </li>
+                        <li>
+                            <router-link :to="{name: 'remainproducts'}"
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Remain Products</router-link>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -142,16 +146,12 @@
                     </button>
                     <ul id="dropdown-example2" class="hidden py-2 space-y-2">
                         <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
+                            <router-link :to="{name: 'productsfin'}"
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</router-link>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                            <router-link :to="{name: 'employeefin'}"
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Employees</router-link>
                         </li>
                     </ul>
                 </li>

@@ -9,6 +9,7 @@ import Navbar from './components/Navbar.vue'
   <SideBar />
   <router-view v-slot="{ Component }">
     <component :is="Component" />
+
   </router-view>
 </template>
 
