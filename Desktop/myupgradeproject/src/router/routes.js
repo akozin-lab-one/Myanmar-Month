@@ -11,6 +11,7 @@ import CreateShop from "../pages/shops/Create.vue"
 import EditShop from "../pages/shops/Edit.vue"
 import FinaProduct from "../pages/financial/products/Main.vue"
 import FinaEmployee from "../pages/financial/employee/Main.vue"
+import SaleMain from "../pages/Sale/Main.vue"
 
 const routes = [{
     path: '/',
@@ -41,7 +42,7 @@ const routes = [{
     component: CreateCategory,
     name: 'createcategories'
 }, {
-    path: '/category/edit',
+    path: '/category/edit/:id',
     component: EditCategory,
     name: 'editcategory'
 }, {
@@ -53,7 +54,7 @@ const routes = [{
     component: CreateShop,
     name: 'createshop'
 }, {
-    path: '/shop/edit',
+    path: '/shop/edit/:id',
     component: EditShop,
     name: 'editshop'
 }, {
@@ -64,6 +65,10 @@ const routes = [{
     path: '/financial/employee',
     component: FinaEmployee,
     name: 'employeefin'
+}, {
+    path: '/sale/main',
+    component: SaleMain,
+    name: 'salemain'
 }]
 
 export default routes

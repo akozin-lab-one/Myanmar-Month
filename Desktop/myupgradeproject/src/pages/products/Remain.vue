@@ -1,7 +1,7 @@
 <template>
     <div class="p-4 sm:ml-64">
         <div class="p-1 rounded-lg  mt-14">
-            <h2 class="text-center mb-3 uppercase font-semibold text-2xl ">Products</h2>
+            <h2 class="text-center mb-3 uppercase font-semibold text-2xl ">Remain Products</h2>
             <div class="md:text-right mb-5 flex justify-center">
                 <input class="border border-gray-300  drop-shadow-sm ps-2 py-1 text-base rounded-md" type="text" name=""
                     id="">                    
@@ -17,7 +17,7 @@
                                 Ordinary
                             </th>
                             <th scope="col" class="md:px-6 px-1 py-2 md:py-3">
-                                Remail
+                                Remain
                             </th>
                         </tr>
                     </thead>
