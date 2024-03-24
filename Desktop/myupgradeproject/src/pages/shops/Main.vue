@@ -89,7 +89,7 @@
                             </a>
                     </li>
                 </ul>
-            </nav>
+                    </nav>
                 </div>
             </div>
             <div v-if="message" id="toast-bottom-right"

@@ -1,5 +1,6 @@
 import Main from "../pages/Main.vue";
 import MainProduct from "../pages/products/Main.vue";
+import MainQrProduct from "../pages/products/Qrcode.vue"
 import CreateProduct from "../pages/products/Create.vue";
 import RemainProduct from "../pages/products/Remain.vue"
 import Category from "../pages/categories/Category.vue";
@@ -10,6 +11,8 @@ import Shop from "../pages/shops/Main.vue"
 import CreateShop from "../pages/shops/Create.vue"
 import EditShop from "../pages/shops/Edit.vue"
 import FinaProduct from "../pages/financial/products/Main.vue"
+import FinaProductCreate from "../pages/financial/products/createPrice.vue"
+import FinaProductEdit from "../pages/financial/products/editPrices.vue"
 import FinaEmployee from "../pages/financial/employee/Main.vue"
 import SaleMain from "../pages/Sale/Main.vue"
 
@@ -21,6 +24,10 @@ const routes = [{
     path: '/product/main',
     component: MainProduct,
     name: 'products'
+}, {
+    path: '/product/qrcode/:id',
+    component: MainQrProduct,
+    name: 'productQr'
 }, {
     path: '/product/create',
     component: CreateProduct,
@@ -61,6 +68,14 @@ const routes = [{
     path: '/financial/products',
     component: FinaProduct,
     name: 'productsfin'
+}, {
+    path: '/financial/products/create/',
+    component: FinaProductCreate,
+    name: 'productsfincreate'
+}, {
+    path: '/financial/products/edit/:id',
+    component: FinaProductEdit,
+    name: 'productsfinedit'
 }, {
     path: '/financial/employee',
     component: FinaEmployee,
